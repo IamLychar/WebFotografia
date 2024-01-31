@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+
+
+body{
+    font-family: 'Exo 2', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow:scroll;
+}
+
+.pagina-entera {
+    position: relative;
+    height: 100vh;
+    width: 100%;  
+}
+
+.contenedor-general {
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    grid-template-rows: 20% 80% ;
+    grid-template-areas: "alto"
+                        "medio";
+
+
+
+    height: 100%; 
+    width: 100%; 
+
+}
+
+.nav-menu {
+    background: rgb(255, 255, 255);
+    grid-area: alto;
+    display: flex;
+}
+
+
+
+.contenedor-menu {
+    
+    display:flex;
+    align-items: center;
+    width: 100%;
+    padding: 0% 0% 0% 30%;
+
+   
+
+    animation: 2s nav-menu 0.5s ease-in-out; 
+}
+
+
+@keyframes nav-menu {
+
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+
+}
+
+
+
+.contenedor-menu img {
+    width: 5.8%;
+}
+
+.contenedor-menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 20px;
+
+
+    width: 450px;
+}
+
+.contenedor-menu ul li a {
+    text-decoration: none;
+    color: red;
+    font-weight: 800;
+   
+}
+
+.contenedor-medio{
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    padding: 66px;
+    margin: 47px;
+    left: 200px;
+    top: -91px;
+
+
+
+    animation: 2s contenedor-medio 2 ease-in-out; 
+}
+
+
+@keyframes contenedor-medio {
+
+    0%{
+        transform: translateY(-600px);
+      }
+      100%{
+        transform: translateY(0px);
+      }
+}
+
+.contenedor-medio p:first-child {
+
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.contenedor-medio h1{
+    
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+
+.form{
+
+    box-sizing: border-box;
+    position: relative;
+    left: -170px;
+    background: #52afe6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(39px) auto;
+    padding: 40px;
+
+    width: 375px;
+    height: 308px;
+    padding: 47px;
+}
+
+
+.info{
+    color: white;
+    margin-top: 10px;
+
+}
+
